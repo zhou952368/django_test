@@ -38,8 +38,8 @@ def login(request):
                 return render(request, 'login.html', {'msg': '账号密码不符合规范'})
 
         except:
-            # return render(request, '404.html')
-            return HttpResponse('404')
+            return render(request, '404.html')
+            # return HttpResponse('404')
 
     else:
         # 不支持请求方式
